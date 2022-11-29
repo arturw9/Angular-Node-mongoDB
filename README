@@ -1,0 +1,35 @@
+Requisitos do sistema:
+
+O sistema proposto possui dois domínios: o domínio do frontend e do backend, cada um com as suas especificações e objetivos. 
+
+Instruções para o Backend
+
+A API a ser desenvolvida deverá possuir os seguintes Endpoints:
+“/add_user/“ 
+Nesse Enpoint deverá ser criado um usuário (RE1.1)
+Dados do usuário: nome, email, telefone (RE1.2)
+“/users/"
+Nesse Endpoint é preciso listar os usuários que foram cadastrados na plataforma com todos os seus dados (RE2.1)
+“/users/id”
+Nesse Endpoint é preciso consultar um usuário especifico com todos os seus dados (RE3.1)
+“/edit_user/id“
+Nesse Endpoint deverá ser possível editar um usuário, isto é, editar o nome e/ou e-mail e/ou telefone (RE4.1)
+“/delete_user/”
+Nesse Endpoint deverá ser possível excluir um usuário do banco de dados (RE5.1)
+
+Instruções para o Frontend
+
+Seguem os requisitos do projeto frontend:
+Desenvolver uma navbar onde o usuário poderá interagir com a plataforma
+Essa navbar deverá possuir um item:
+“Investimentos” (RE1.1)
+Além disso, essa navbar deverá ser responsiva (RE1.2)
+Na aba de de “investimentos” deve ser criado uma plataforma onde o usuário poderá visualizar os investimentos que foram publicados. 
+Nessa tela o usuário poderá:
+Ver a lista de investimentos ativos (RE2.1)
+Clicar em um investimento para ver mais detalhes acerca do mesmo (RE2.2)
+Tela de detalhes do investimento, isto é, a tela quando o usuário decidir clicar em um investimento:
+O usuário nessa tela poderá:
+Ver detalhes acerca de um investimento (RE3.1)
+Investir em uma empresa. (RE3.2)
+Ao investir em uma empresa um banner deverá aparecer com a seguinte mensagem “Parabéns, agora você é sócio desta empresa!” 

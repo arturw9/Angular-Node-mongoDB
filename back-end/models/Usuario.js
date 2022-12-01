@@ -5,12 +5,15 @@ const usuarioSchema = new mongoose.Schema({
     nome: {
         type: String,
         required: true,
-        unique: true
     },
     email: {
         type: String,
         required: true,
         unique: true
+    },
+    senha: {
+        type: String,
+        required: true
     },
     telefone: {
         type: Number,

@@ -1,0 +1,43 @@
+<div class="conteudo-login">
+
+  <form class="conteudo-form" [formGroup]="loginForm" (submit)="submitLogin()">
+    <div class="logo">Logo</div>
+    <div>
+      <input class="input-login" type="text" placeholder="Digite o nome aqui" formControlName="nome"/>
+    </div>
+      <div class="mensagem-erro" *ngIf="loginForm.get('nome')?.hasError?.('required')&& loginForm.get('nome')?.touched">
+        O nome é obrigatorio!
+      </div>
+
+      <div>
+        <input class="input-login" type="text" placeholder="Digite o telefone aqui" formControlName="telefone"/>
+      </div>
+        <div class="mensagem-erro" *ngIf="loginForm.get('telefone')?.hasError?.('required')&& loginForm.get('telefone')?.touched">
+          O telefone é obrigatorio!
+        </div>
+
+      <div>
+        <input class="input-login" type="text" placeholder="Digite o e-mail aqui" formControlName="email"/>
+      </div>
+        <div class="mensagem-erro" *ngIf="loginForm.get('email')?.hasError?.('required')&& loginForm.get('email')?.touched">
+          O e-mail é obrigatorio!
+        </div>
+        <div class="mensagem-erro" *ngIf="loginForm.get('email')?.hasError?.('email')&& loginForm.get('email')?.touched">
+          O formato do e-mail é invalido!
+        </div>
+
+      <div>
+        <input class="input-login" type="password" placeholder="Digite a senha aqui" formControlName="senha"/>
+      </div>
+        <div class="mensagem-erro" *ngIf="loginForm.get('senha')?.hasError?.('required')&& loginForm.get('senha')?.touched">
+          A senha é obrigatorio!
+        </div>
+
+
+
+          <div>
+            <button  type="submit" class="input-submit" [disabled]="!loginForm">Logar</button>
+          </div>
+  </form>
+
+</div>

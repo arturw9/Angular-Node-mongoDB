@@ -6,7 +6,7 @@ import { map } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class ApiService {
+export class UserService {
 
   constructor(private _http:HttpClient) { }
 

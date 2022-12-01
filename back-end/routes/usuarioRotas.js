@@ -4,11 +4,12 @@ const Usuario = require('../models/Usuario')
 // Criação de usuarios
 router.post('/add_user/', async (req, res) => {
 try {
-    const {nome, email, telefone} = req.body
+    const {nome, email, senha, telefone} = req.body
 
     const usuario = {
         nome,
         email,
+        senha,
         telefone
     }
 
@@ -75,11 +76,12 @@ router.put('/edit_user/:id', async (req, res) => {
 
     const id = req.params.id
 
-    const {nome, email, telefone} = req.body
+    const {nome, email, senha, telefone} = req.body
 
     const usuario = {
         nome,
         email,
+        senha,
         telefone
     }
 
